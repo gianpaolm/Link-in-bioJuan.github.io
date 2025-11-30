@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Pablo Angel | Arquitecto Corporal</title>
+    <meta name="theme-color" content="#000814" />
+    
+    <!-- Google Fonts: Orbitron (Headings) and Exo 2 (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                black: '#000814',    // Fondo profundo
+                navy: '#001D3D',     // Contenedores
+                royal: '#003566',    // Acentos oscuros
+                gold: '#FFC300',     // Acento principal
+                yellow: '#FFD60A',   // Brillos/Hover
+                glass: 'rgba(0, 29, 61, 0.7)', // Vidrio azulado
+              }
+            },
+            fontFamily: {
+              orbitron: ['"Orbitron"', 'sans-serif'],
+              exo: ['"Exo 2"', 'sans-serif'],
+            },
+            animation: {
+              'spin-slow': 'spin 12s linear infinite',
+              'pulse-fast': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'pan-image': 'pan 30s ease-in-out infinite alternate',
+            },
+            keyframes: {
+              pan: {
+                '0%': { transform: 'scale(1.1) translate(0%, 0%)' },
+                '100%': { transform: 'scale(1.2) translate(-2%, -2%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000814;
+        color: white;
+        overflow-x: hidden;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000814;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FFC300;
+        border-radius: 4px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
